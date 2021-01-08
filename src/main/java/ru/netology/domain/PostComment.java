@@ -5,11 +5,11 @@ public class PostComment {
     private String imageUrl;
     private String name;
     private String genre;
-    private PostComment() comments;
 
-    private boolean isGroupsCanPost(){
-        return groupsCanPost;
+    private PostComment[] comments;
 
+    public boolean GroupsCanPost(){
+        return GroupsCanPost();
     }
 
     public void setGroupsCanPost(boolean groupsCanPost) {
@@ -23,7 +23,5 @@ public class PostComment {
     public void setComments(PostComment[] comments) {
         this.comments = comments;
     }
-
-
 
 }
