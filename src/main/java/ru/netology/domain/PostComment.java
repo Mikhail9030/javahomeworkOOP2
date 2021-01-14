@@ -1,27 +1,51 @@
 package ru.netology.domain;
 
+import java.util.Date;
+
 public class PostComment {
-    private String id;
-    private String imageUrl;
-    private String name;
-    private String genre;
+    private long id;
+    private long ownerId;
+    private Date publicationTime;
+    private String text;
+    private long parentId;
 
-    private PostComment[] comments;
-
-    public boolean GroupsCanPost(){
-        return GroupsCanPost();
+    public long getId() {
+        return id;
     }
 
-    public void setGroupsCanPost(boolean groupsCanPost) {
-        this.groupsCanPost = groupsCanPost;
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public PostComment[] getComments() {
-        return comments;
+    public long getOwnerId() {
+        return ownerId;
     }
 
-    public void setComments(PostComment[] comments) {
-        this.comments = comments;
+    public void setOwnerId(long ownerId) {
+        this.ownerId = ownerId;
     }
 
+    public Date getPublicationTime() {
+        return publicationTime;
+    }
+
+    public void setPublicationTime(Date publicationTime) {
+        this.publicationTime = publicationTime;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public long getParentId() {
+        return parentId;
+    }
+
+    public void setParentId(long parentId) {
+        this.parentId = parentId;
+    }
 }
